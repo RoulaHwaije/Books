@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.button {
+    height: 2.3rem;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.1rem;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+}
+.morebtn{
+    width: 8rem;
+    color: rgb(247, 119, 0);
+    border: 2px solid rgb(247, 119, 0);
+    background-color: white;
+    transition: color 0.4s ease;
+}  
+.morebtn:hover{
+    background-color: rgb(247, 119, 0);;
+    color: white;
+} 
+.editButton{
+    color: rgb(4, 187, 74);
+    border: 2px solid rgb(4, 187, 74);
+    background-color: white;
+    width: 4rem;
+    transition: color 0.4s ease;
+}
+.editButton:hover{
+    background-color: rgb(4, 187, 74);
+    color: white;
+} 
