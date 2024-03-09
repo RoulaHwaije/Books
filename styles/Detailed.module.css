@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.container{
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.img{
+    height: 23rem;
+    width: 23rem;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+    margin-left: 20px;
+}
+.content1{
+    overflow: auto;
+    height: 100%;
+}
+.desc1{
+    margin-top: 2rem;
+    font-family: "Lato", sans-serif;
+}
+.desc{
+    color: rgb(83, 122, 173);
+}
+.price{
+    font-family: "Lato", sans-serif;
+    color: red;
+    margin-top: 0.5rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.bookName{
+    color: rgb(83, 122, 173);
+    font-size: 2.2rem;
+    font-family: "Lato", sans-serif;
+}
+.author{
+    font-family: "Lato", sans-serif;
+    color: gray;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+.authorlabel{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.paragragh{
+    font-size: 1.2rem;
+}
+.btncontainer{
+    display: flex;
+    justify-content: flex-end ;
+}
+.booktitles{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-top: 10px;
+}
+.button {
+    background-color: rgb(231, 2, 2);
+    height: 3rem;
+    border: 1px solid rgb(231, 2, 2);
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 6rem;
+    font-family: "Lato", sans-serif;
+    transition: color 0.4s ease;
+}  
+.button:hover{
+    background-color: white;
+    color: rgb(231, 2, 2);;
+} 
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        overflow: scroll;
+    }
+    .img{
+        max-height: 20rem;
+        max-width: 20rem;    
+    }
+    .paragragh{
+        overflow: scroll;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .img{
+        max-height: 15rem;
+        max-width: 15rem;    
+    }
+    .paragragh{
+        overflow: scroll;
+    }
+  }

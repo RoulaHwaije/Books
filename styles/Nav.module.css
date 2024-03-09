@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.container{
+    position: relative;
+}
+
+.nav{
+    height: 80px;
+    width: 100%;
+    padding: 10px 70px;
+    background: rgb(69, 105, 151);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: fixed;
+    z-index: 99;
+}
+.newnav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoTitle{
+   display: flex ;
+   align-items: center;
+}
+.nav h3{
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav ul li a{
+    margin: 5px 15px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-family: "Lato", sans-serif;
+}
+
+.iconb{
+    padding: 10px;
+    margin-top: 20px;;
+}
+.logo img{
+    width: 46px;
+    margin-right: 8px;   
+}
+
+/* .smalllist{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+} */
+  .menu{
+    margin-top: 10px;
+    display: none;
+    /* opacity: 0; */
+    /* transition: opacity 3s ease; */
+  }
+  .nav{
+    transition: height 1s ease;
+  }
+  .menu.show {
+    display: block;
+    /* opacity: 1; */
+  }
+  .nav.show{
+    height: 12rem ;
+    /* transform: height; */
+  }
+  .menu ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 1rem;
+  }
+.toggle {
+    cursor: pointer;
+    display: none;
+  }
+  
+  .toggle span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin-bottom: 5px;
+  }
+
+@media (max-width: 768px) {
+
+    .nav{
+        height: 56px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+   .firstlist{
+        display: none;
+    }
+    .nav h3{
+        font-size: 1rem;
+    }
+    .logo img{
+        width: 30px;
+    }
+      /* .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+      } */
+      .nav ul li a{
+        margin: 0px;
+      }
+      .toggle {
+        display: block;
+      }
+}

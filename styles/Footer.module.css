@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.section4{
+    background-color: gray;
+    padding: 40px;
+    font-family: "Lato", sans-serif;
+   }
+   .footer {
+     display: grid;
+     grid-template-columns: repeat(auto-fill , minmax(400px,1fr));
+     grid-gap: 6rem;
+     padding: 10px 25px;
+     margin: auto 1rem auto 1rem;
+   }
+   .footer .column h5{
+    margin-bottom: 12px;
+    font-size: 33px;
+    color: white;
+   }
+   .footer .column h4{
+    font-size: 20px;
+    color: white;
+   }
+   .footer .column a{
+    font-size: 20px;
+    margin: 18px auto;
+    color: white;
+    text-decoration: none;
+    display: block;
+   }
+   .footer .column a:hover{
+     color: #aac9d6;
+   }
+   .column:nth-child(3) .email{
+    text-decoration: none;
+    color: #73c9ee;
+    font-weight: 400;
+   }
+  
+  
+   .footer2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(350px,1fr));
+    grid-gap: 11rem;
+    padding: 25px;
+    margin: auto 1rem auto 1rem;
+  }
+   .footer2 a{
+    font-size: 18px;
+    margin: 7px auto;
+    color: rgb(230, 228, 228);
+    text-decoration: none;
+   }
+   .footer2 p{
+    margin-top: 11px;
+    font-size: 18px;
+    color: rgb(230, 228, 228);
+   }
+   .socialicons{
+     display: flex;
+     
+   }
+   .footer .socialicons a{
+    margin: 3px 23px 3px 0px;
+    color: white;
+    font-size: 33px;
+    transition: transform 0.7s ease ,color 0.7s ease-in-out;
+   }
+   
+   .footer .socialicons a:hover{
+    transform: translateY(-20px);
+  }
+  .footer .socialicons .facebook:hover{
+    color: #0346d8;
+  }
+  .footer .socialicons .twitter:hover{
+    color: #38a1f3;
+  }
+  .footer .socialicons .instagram:hover{
+    color: #e1306c;
+  }
+  .footer .socialicons .plus:hover{
+    color: #db4a39;
+  }
+   .footer-space{
+     margin: auto 11px;
+   }
+   @media screen and (max-width:1030px) {
+    .footer{
+      grid-template-columns: repeat(auto-fill , minmax(200px,1fr));
+      grid-gap: 1rem;
+    }
+    .footer-2{
+      grid-gap: 1rem;
+    }
+    .footer .column{
+      margin-top: 18px;
+    }
+    .socialicons {
+      margin-left: 0;
+      margin-top: 20px ;
+    }
+   }
