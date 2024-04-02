@@ -34,7 +34,6 @@ const Books: React.FC<{ books: Book[] }> = ({ books }) => {
           <h1 className={style.line1}>Easily manage, update, and view</h1>
           <h1 className={style.line2}>all books details at our shop center</h1>
           <div className={style.btnsection}>
-            {/* <h2>Add a new Book </h2> */}
             <button className={style.addbtn2} onClick={handleClick}>
               Add a new Book
             </button>
@@ -51,14 +50,12 @@ export async function getServerSideProps() {
     "https://company-78c40.europe-west1.firebasedatabase.app/books.json"
   );
   const DATA = res.data;
-  console.log("data : ", DATA); // -> object
   var books: any[] = [];
 
   for (let key in DATA) {
     DATA[key].uniquekey = key;
     books.push(DATA[key]);
   }
-  console.log(" -- ", books);
   return { props: { books } };
 }
 
