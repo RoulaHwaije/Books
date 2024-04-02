@@ -1,4 +1,3 @@
-// components/Modal.tsx
 import { FC, ReactNode } from "react";
 import styles from "../styles/Modal.module.css";
 
