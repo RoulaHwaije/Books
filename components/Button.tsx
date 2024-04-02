@@ -1,5 +1,3 @@
-// components/Button.tsx
-
 import React, { MouseEventHandler } from "react";
 import style from "../styles/button.module.css";
 
