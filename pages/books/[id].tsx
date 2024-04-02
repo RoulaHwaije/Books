@@ -16,7 +16,6 @@ const BookDetailPage: React.FC<{ book: any }> = ({ book }) => {
 
   return (
     <Modal isOpen={isModalOpen} onClose={closeModal}>
-      {/* <h1>Book Details</h1> */}
       <BookDetail book={book} onClose={closeModal} />
     </Modal>
   );
