@@ -1,5 +1,3 @@
-// components/BookDetail.tsx
-// modal page
 import Style from "../styles/Detailed.module.css";
 import Modal from "../components/Modal";
 import React, { useState } from "react";
@@ -21,7 +19,6 @@ interface Props {
 
 const BookDetail: React.FC<Props> = ({ book, onClose }) => {
   const handleClick: React.MouseEventHandler<HTMLButtonElement> = () => {
-    console.log("Button cancel clicked!");
     onClose();
   };
 
