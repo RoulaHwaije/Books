@@ -26,7 +26,6 @@ const NewBookPage = () => {
     return result;
   }
 
-  // Generate a random ID of length 10
   const randomId = generateRandomId(10);
   const handleSubmit = async (formData: any) => {
     formData._id = randomId;
