@@ -1,5 +1,3 @@
-// components/BookList.tsx
-
 import React from "react";
 import Link from "next/link";
 import BookCard from "./BookCard";
@@ -27,11 +25,9 @@ const BookList: React.FC<Props> = ({ books, isAdmin }) => {
   const router = useRouter();
 
   const handleClick: React.MouseEventHandler<HTMLButtonElement> = () => {
-    console.log("Button clicked!");
     router.push("/admin/books/addnew");
   };
 
-  console.log("- books", books);
   return (
     <div>
       <div className={style.gridcontainer}>
@@ -39,11 +35,6 @@ const BookList: React.FC<Props> = ({ books, isAdmin }) => {
           <BookCard book={book} key={book._id} isAdmin={isAdmin} />
         ))}
       </div>
-      {/* {isAdmin && (
-        <button className={styles.addbtn} onClick={handleClick}>
-          <MdAddToPhotos />
-        </button>
-      )} */}
     </div>
   );
 };
