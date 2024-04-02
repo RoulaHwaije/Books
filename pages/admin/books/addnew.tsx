@@ -29,7 +29,6 @@ const NewBookPage = () => {
   // Generate a random ID of length 10
   const randomId = generateRandomId(10);
   const handleSubmit = async (formData: any) => {
-    console.log("formData ", formData);
     formData._id = randomId;
     try {
       await axios.post(
