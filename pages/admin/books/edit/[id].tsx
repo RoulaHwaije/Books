@@ -24,7 +24,6 @@ const editPage: React.FC<{ book: Book }> = ({ book }) => {
   };
 
   const handleSubmit = async (formData: any) => {
-    console.log("Book ", book);
     const uniquekey = router.query.id;
     formData._id = book._id;
     formData.uniquekey = uniquekey;
