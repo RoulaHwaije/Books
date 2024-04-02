@@ -23,10 +23,6 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.headerContainer}>
-          {/* <div className={styles.headText11}>
-            <h1 className={styles.headerText1}>Your Favorite </h1>
-            <h1 className={styles.headerText2}>Bookstore</h1>
-          </div> */}
         </div>
 
         <div className={styles.header}>
@@ -38,7 +34,7 @@ export default function Home() {
         <button className={styles.addbtn} onClick={handleClick}>
           <FaShoppingCart />
         </button>
-        {/* section 2 */}
+       
         <div className={styles.section2}>
           <img
             src="http://localhost:3000/book1.jpg"
