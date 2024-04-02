@@ -1,4 +1,3 @@
-// components/BookForm.tsx
 import Styles from "../styles/Form.module.css";
 import React from "react";
 import { useRouter } from "next/router";
@@ -17,7 +16,6 @@ const BookForm: React.FC<Props> = ({ onSubmit }) => {
     onSubmit(data);
   };
   const handleClick: React.MouseEventHandler<HTMLButtonElement> = () => {
-    console.log("Button clicked!");
     router.push("/admin/books");
   };
   return (
