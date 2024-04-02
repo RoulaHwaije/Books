@@ -28,7 +28,6 @@ const Books: React.FC<{ books: Book[] }> = ({ books }) => {
       <div className={style.section1}>
         <div className={style.Textsection}>
           <h2 className={style.headert1}>Explore a curated catalogue</h2>
-          {/* <h1 className={style.headert2}>picked for you</h1> */}
           <h1 className={style.headert3}>Available at the best prices</h1>
           <a className={style.link1} href="#BookList">
             <p>Get started</p> <BsFillArrowDownSquareFill />
@@ -56,11 +55,9 @@ export async function getServerSideProps() {
     "https://company-78c40.europe-west1.firebasedatabase.app/books.json"
   );
   const DATA = res.data;
-  console.log("data : ", DATA); // -> object
   var books: any[] = [];
 
   for (let key in DATA) {
-    console.log(key, " -- ", DATA[key]);
     DATA[key].uniquekey = key;
     books.push(DATA[key]);
   }
